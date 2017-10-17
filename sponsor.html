@@ -1,0 +1,561 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Steamhack</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <link href="http://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+            #footer #mc_embed_signup {
+                background-color: #39a288;
+                color: #ffffff;
+                padding: 4em 3.5em 2em 3.5em ;
+                -moz-flex-grow: 1;
+                -webkit-flex-grow: 1;
+                -ms-flex-grow: 1;
+                flex-grow: 1;
+                margin-bottom: 0;
+            }
+
+                #footer #mc_embed_signup input, #footer #mc_embed_signup select, #footer #mc_embed_signup textarea {
+                    color: #ffffff;
+                }
+
+                #footer #mc_embed_signup a {
+                    color: #ffffff;
+                }
+
+                #footer #mc_embed_signup strong, #footer #mc_embed_signup b {
+                    color: #ffffff;
+                }
+
+                #footer #mc_embed_signup h1, #footer #mc_embed_signup h2, #footer #mc_embed_signup h3, #footer #mc_embed_signup h4, #footer #mc_embed_signup h5, #footer #mc_embed_signup h6 {
+                    color: #ffffff;
+                }
+
+                #footer #mc_embed_signup blockquote {
+                    border-left-color: rgba(255, 255, 255, 0.25);
+                }
+
+                #footer #mc_embed_signup code {
+                    background: rgba(255, 255, 255, 0.065);
+                    border-color: rgba(255, 255, 255, 0.25);
+                }
+
+                #footer #mc_embed_signup hr {
+                    border-bottom-color: rgba(255, 255, 255, 0.25);
+                }
+
+                #footer #mc_embed_signup .box {
+                    border-color: rgba(255, 255, 255, 0.25);
+                }
+
+                #footer #mc_embed_signup input[type="submit"],
+                #footer #mc_embed_signup input[type="reset"],
+                #footer #mc_embed_signup input[type="button"],
+                #footer #mc_embed_signup button,
+                #footer #mc_embed_signup .button {
+                    background-color: transparent;
+                    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+                    color: #ffffff !important;
+                }
+
+                    #footer #mc_embed_signup input[type="submit"]:hover, #footer #mc_embed_signup input[type="submit"]:focus,
+                    #footer #mc_embed_signup input[type="reset"]:hover,
+                    #footer #mc_embed_signup input[type="reset"]:focus,
+                    #footer #mc_embed_signup input[type="button"]:hover,
+                    #footer #mc_embed_signup input[type="button"]:focus,
+                    #footer #mc_embed_signup button:hover,
+                    #footer #mc_embed_signup button:focus,
+                    #footer #mc_embed_signup .button:hover,
+                    #footer #mc_embed_signup .button:focus {
+                        background-color: rgba(255, 255, 255, 0.065);
+                    }
+
+                    #footer #mc_embed_signup input[type="submit"]:active,
+                    #footer #mc_embed_signup input[type="reset"]:active,
+                    #footer #mc_embed_signup input[type="button"]:active,
+                    #footer #mc_embed_signup button:active,
+                    #footer #mc_embed_signup .button:active {
+                        background-color: rgba(255, 255, 255, 0.165);
+                    }
+
+                    #footer #mc_embed_signup input[type="submit"].icon:before,
+                    #footer #mc_embed_signup input[type="reset"].icon:before,
+                    #footer #mc_embed_signup input[type="button"].icon:before,
+                    #footer #mc_embed_signup button.icon:before,
+                    #footer #mc_embed_signup .button.icon:before {
+                        color: rgba(255, 255, 255, 0.75);
+                    }
+
+                    #footer #mc_embed_signup input[type="submit"].special,
+                    #footer #mc_embed_signup input[type="reset"].special,
+                    #footer #mc_embed_signup input[type="button"].special,
+                    #footer #mc_embed_signup button.special,
+                    #footer #mc_embed_signup .button.special {
+                        box-shadow: none;
+                        background-color: #ffffff;
+                        color: #39a288 !important;
+                    }
+
+                        #footer #mc_embed_signup input[type="submit"].special.icon:before,
+                        #footer #mc_embed_signup input[type="reset"].special.icon:before,
+                        #footer #mc_embed_signup input[type="button"].special.icon:before,
+                        #footer #mc_embed_signup button.special.icon:before,
+                        #footer #mc_embed_signup .button.special.icon:before {
+                            color: #39a288 !important;
+                        }
+
+                #footer #mc_embed_signup label {
+                    color: #ffffff;
+                }
+
+                #footer #mc_embed_signup input[type="text"],
+                #footer #mc_embed_signup input[type="password"],
+                #footer #mc_embed_signup input[type="email"],
+                #footer #mc_embed_signup select,
+                #footer #mc_embed_signup textarea {
+                    background: rgba(0, 0, 0, 0.065);
+                    border-color: transparent;
+                }
+
+                    #footer #mc_embed_signup input[type="text"]:focus,
+                    #footer #mc_embed_signup input[type="password"]:focus,
+                    #footer #mc_embed_signup input[type="email"]:focus,
+                    #footer #mc_embed_signup select:focus,
+                    #footer #mc_embed_signup textarea:focus {
+                        border-color: #ffffff;
+                        box-shadow: 0 0 0 1px #ffffff;
+                    }
+
+                #footer #mc_embed_signup .select-wrapper:before {
+                    color: rgba(255, 255, 255, 0.25);
+                }
+
+                #footer #mc_embed_signup input[type="checkbox"] + label,
+                #footer #mc_embed_signup input[type="radio"] + label {
+                    color: #ffffff;
+                    opacity: 1;
+                }
+
+                input[type="checkbox"],
+                input[type="radio"] {
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    -ms-appearance: none;
+                    appearance: none;
+                    display: block;
+                    margin-right: -2em;
+                    opacity: 1;
+                    width: 1em;
+                    z-index: 100;
+                }
+
+                    #footer #mc_embed_signup input[type="checkbox"] + label:before,
+                    #footer #mc_embed_signup input[type="radio"] + label:before {
+                        background: rgba(0, 0, 0, 0.065);
+                        border-color: rgba(255, 255, 255, 0.25);
+                    }
+
+                #footer #mc_embed_signup input[type="checkbox"]:checked + label:before,
+                #footer #mc_embed_signup input[type="radio"]:checked + label:before {
+                    background-color: #ffffff;
+                    border-color: #ffffff;
+                    color: #39a288;
+                }
+
+                #footer #mc_embed_signup input[type="checkbox"]:focus + label:before,
+                #footer #mc_embed_signup input[type="radio"]:focus + label:before {
+                    border-color: #ffffff;
+                    box-shadow: 0 0 0 1px #ffffff;
+                }
+                
+                #footer #mc_embed_signup ::-webkit-input-placeholder {
+                    color: rgba(255, 255, 255, 0.75) !important;
+                }
+
+                #footer #mc_embed_signup :-moz-placeholder {
+                    color: rgba(255, 255, 255, 0.75) !important;
+                }
+
+                #footer #mc_embed_signup ::-moz-placeholder {
+                    color: rgba(255, 255, 255, 0.75) !important;
+                }
+
+                #footer #mc_embed_signup :-ms-input-placeholder {
+                    color: rgba(255, 255, 255, 0.75) !important;
+                }
+
+                #footer #mc_embed_signup .formerize-placeholder {
+                    color: rgba(255, 255, 255, 0.75) !important;
+                }
+
+                #footer #mc_embed_signup ul.alt li {
+                    border-top-color: rgba(255, 255, 255, 0.25);
+                }
+
+                #footer #mc_embed_signup header p {
+                    color: rgba(255, 255, 255, 0.75);
+                }
+
+                #footer #mc_embed_signup header.major p {
+                    color: #ffffff;
+                }
+
+                #footer #mc_embed_signup header.major:after {
+                    background-color: rgba(255, 255, 255, 0.25);
+                }
+
+                #footer #mc_embed_signup table tbody tr {
+                    border-color: rgba(255, 255, 255, 0.25);
+                }
+
+                    #footer #mc_embed_signup table tbody tr:nth-child(2n + 1) {
+                        background-color: rgba(255, 255, 255, 0.065);
+                    }
+
+                #footer #mc_embed_signup table th {
+                    color: #ffffff;
+                }
+
+                #footer #mc_embed_signup table thead {
+                    border-bottom-color: rgba(255, 255, 255, 0.25);
+                }
+
+                #footer #mc_embed_signup table tfoot {
+                    border-top-color: rgba(255, 255, 255, 0.25);
+                }
+
+                #footer #mc_embed_signup table.alt tbody tr td {
+                    border-color: rgba(255, 255, 255, 0.25);
+                }
+
+                #footer #mc_embed_signup .spotlights article {
+                    background-color: rgba(255, 255, 255, 0.065);
+                }
+
+                #footer #mc_embed_signup .timeline > section {
+                    border-color: rgba(255, 255, 255, 0.75);
+                }
+
+                    #footer #mc_embed_signup .timeline > section:before {
+                        background-color: rgba(255, 255, 255, 0.75);
+                    }
+
+                #footer #mc_embed_signup .timeline header p {
+                    color: #ffffff;
+                }
+
+                #footer #mc_embed_signup h4 {
+                    font-weight: 700;
+                    margin-bottom: 2em;
+                    text-transform: uppercase;
+                }
+
+                #footer #mc_embed_signup label {
+                    border: 0;
+                    clip: rect(0, 0, 0, 0);
+                    /*height: 1px;
+                    margin: -1px;*/
+                    overflow: hidden;
+                    padding: 0;
+                    position: absolute;
+                    /*width: 1px;*/
+                }
+
+                #footer #mc_embed_signup .response {
+                    color: white;
+                }
+
+                ul.email-type-selector li {
+                    min-height: 26px;
+                }
+
+                ul.email-type-selector li input[type="radio"] {
+                    float: left;
+                }
+
+                ul.email-type-selector li span {
+                    margin-left: 25px;
+                }
+
+        </style>
+	</head>
+	<body>
+
+		<!-- Page wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<span class="logo"><a href="index.html">Steamhack</a> <span></span></span>
+						<a href="#menu">Menu</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+							</ul>
+							<a class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Main -->
+					<section id="main" class="wrapper alt">
+						<div class="inner">
+
+							<header class="major special">
+								<p>Sponsors</p>
+								<h1>A way to give back.</h1>
+							</header>
+
+							<a href="#" class="image main"><center><img src="images/steamhack.png" style = "width:65%;" alt="logo" /></center></a>
+							<p>The Steamhack prime directive is to provide access to technology education to those who might otherwise not have it. It is our sincerest desire to not only enhance the lives of our fellow citizens this year, but also to provide a foundation of knowledge that will empower them to flourish in the years to come.</p>
+							<p>So how do we do that?</p>
+							<p>Steamhack 2017 is an event designed by the Tallahassee technology community.  Teams of product designers, software developers, and digital artists will compete to produce the most impressive solution to a given technical challenge. This type of event is known as a hackathon. Local companies will sponsor the event, and the proceeds will go towards providing technology education to the members of our community via the following two not for profit entities.</p>
+                            <p>Living Stones International (LSI) was established as a children and family outreach and social service organization. LSI seeks to offer children of inmates the opportunity to break out of the cycle of incarceration and the ability to reconnect with family members within the State Prison System in Gadsden, Jefferson, Leon, Liberty and Wakulla counties.</p>
+                            <p>Codecraft Lab is a technology–themed lab that offers a hands-on, self-paced curriculum for students in a comfortable, collaborative learning environment. Codecraft Lab aims to promote meaningful mentor relationships and powerful learning opportunities.</p>
+                            <p>One of the programs that Living Stones International operates is an after school program for the children of incarcerated parents. All Steamhack sponsorship monies will be used to both help Living Stones meet their after school program operating budget and fund the delivery of technology curriculum. Codecraft Labs has been selected to provide the curriculum and mentorship framework.</p>
+                            <p>Please review the following chart and see what sponsorship level is right for you or your organization. If you are interested in becoming a sponsor fill out the contact form below or give us a call and let us know.</p>
+                            <div class="table-wrapper">
+                            <table class = "alt" style = "width:100%;">
+                                <thead>
+                                    <tr>
+                                        <th>Benefit</th>
+                                        <th>Champion $100</th>
+                                        <th>Hero $250</th>
+                                        <th>Venturer $500</th>
+                                        <th>Paragon $1,000</th>
+                                        <th>Epic $5,000</th>
+                                        <th>Legendary $10,000</th>
+                                    </tr>
+                                </thead>
+                                
+                                <tbody>
+                                    <tr>
+                                        <th>Sponsor meal or snack</th>
+                                        <th>&#10004;</th>
+                                        <th>&#10004;</th>
+                                        <th>&#10004;</th>
+                                        <th>&#10004;</th>
+                                        <th>&#10004;</th>
+                                        <th>&#10004;</th>
+                                    </tr>
+                                
+                                <tr>
+                                    <th>Sponsor prize</th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                </tr>
+                                
+                                <tr>
+                                    <th>Logo on website</th>
+                                    <th></th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                </tr>
+                                
+                                <tr>
+                                    <th>Logo on shirt</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                </tr>
+                                
+                                <tr>
+                                    <th>Material in "Swag Bag"</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                </tr>
+                                
+                                <tr>
+                                    <th>Logo on event banner</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                </tr>
+                                
+                                <tr>
+                                    <th>Name recognition at event</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                </tr>
+                                
+                                <tr>
+                                    <th>Recruiting materials to each participant</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                </tr>
+                                
+                                <tr>
+                                    <th>Resume book of all participants</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                </tr>
+                                
+                                <tr>
+                                    <th>Present during opening for 5 minutes</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                </tr>
+                                
+                                <tr>
+                                    <th>Present during opening and closing for 5 minutes</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>&#10004;</th>
+                                    <th>&#10004;</th>
+                                </tr>
+                                
+                                <tr>
+                                    <th>Send a mentor</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th>&#10004;</th>
+                                        <th>&#10004;</th>
+                                    </tr>
+                                
+                                    <tr>
+                                        <th>Full Co-branding</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th>&#10004;</th>
+                                    </tr>
+                                </tbody>
+                                
+                                </table>
+                            </div>
+                        </div>
+                </section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="contact">
+								<li class="icon fa-phone">
+									<strong>Phone</strong>
+									850.544.5112
+								</li>
+								<li class="icon fa-envelope">
+									<strong>Email</strong>
+									derek@steamhack.io
+								</li>
+							</ul>
+                            <!--
+							<form action="mailto:derek@steamhack.io" method="post" enctype="text/plain">
+								<h4>Get in touch</h4>
+								<div class="field half first">
+									<label for="name">Name</label>
+									<input name="name" id="name" type="text" placeholder="Name">
+								</div>
+								<div class="field half">
+									<label for="email">Email</label>
+									<input name="email" id="email" type="email" placeholder="Email">
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+								</div>
+								<ul class="actions">
+									<li><input value="Send Message" class="button big" type="submit"></li>
+								</ul>
+							</form>-->
+                            <!-- Begin MailChimp Signup Form -->
+
+                            <div id="mc_embed_signup">
+                                <form action="//steamhack.us15.list-manage.com/subscribe/post?u=f94a6c9f551a7b0bdf2de278f&amp;id=2a0da8a4a5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                    <div id="mc_embed_signup_scroll">
+                                    <h2>I'm interested in sponsoring</h2>
+                                    <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                                    <div class="mc-field-group">
+                                        <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                                    </label>
+                                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
+                                    </div>
+                                    <div class="mc-field-group">
+                                        <label for="mce-FNAME">First Name </label>
+                                        <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First Name">
+                                    </div>
+                                    <div class="mc-field-group">
+                                        <label for="mce-LNAME">Last Name </label>
+                                        <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last Name">
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f94a6c9f551a7b0bdf2de278f_2a0da8a4a5" tabindex="-1" value=""></div>
+                                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                            <!--End mc_embed_signup-->
+						</div>
+						<div class="copyright">
+							&copy; Steamhack. All rights reserved.
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
